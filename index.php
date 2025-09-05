@@ -1,0 +1,46 @@
+<?php
+session_start();
+include 'config.php';
+?>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้าอุปกรณ์ฟิตเนส</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ร้านค้าอุปกรณ์ฟิตเนส</h1>
+        <div class="cart-icon">
+            <span id="cart-count">0</span>
+            <img src="https://via.placeholder.com/30" alt="ตะกร้าสินค้า" id="cart-img">
+        </div>
+    </header>
+
+    <main>
+        <section class="products-container">
+            <h2>สินค้าของเรา</h2>
+            <div class="product-list">
+                </div>
+        </section>
+
+        <aside class="cart-container">
+            <h2>ตะกร้าสินค้า</h2>
+            <div id="cart-items">
+                </div>
+            <div class="cart-summary">
+                <p>ยอดรวม: <span id="cart-total">0</span> บาท</p>
+                <button id="checkout-btn">ชำระเงิน</button>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ร้านค้าอุปกรณ์ฟิตเนส</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
